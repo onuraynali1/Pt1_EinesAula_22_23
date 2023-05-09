@@ -1,0 +1,39 @@
+*{
+    margin: 100;
+    padding: 100;
+}
+
+@font-face{
+ font-family:'relojDigital';
+ src: url('radioland/RADIOLAND.TTF');
+}
+
+body{
+
+}
+
+.contenedorTimer{
+    text-align: center;
+}
+
+.contenedorTimer h1{
+    font-size: 10rem;
+    font-weight: 400;
+    font-family: 'relojDigital';
+}
+
+.contenedorTimer p{
+    font-size: 2.5rem;
+}
+
+/*
+#timer {
+  font-size: 3em;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 1em;
+}
+*/
+
