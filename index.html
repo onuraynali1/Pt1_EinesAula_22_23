@@ -4,26 +4,23 @@
 	<meta charset="UTF-8"> <!-- Especificación del conjunto de caracteres -->
 	<title>Título de la página</title> <!-- Título de la página -->
 	<link rel="stylesheet" href="einesAula.css">
-	<audio id="beep" src="beep.mp3"></audio>
+	<audio id="beep" src="./beep.mp3"></audio>
 </head>
 <body> <!-- Cuerpo del documento -->
-	<header> <!-- Encabezado de la página -->
+	<header id="cabeza"> <!-- Encabezado de la página -->
 		<h1>EINES DE L'AULA</h1> <!-- Título principal -->
 	</header>
 	<main> <!-- Contenido principal -->
 		<div>
-			<h2>TIMER</h2> <!-- Título de la sección -->
-			<p>Párrafo de la sección.</p> <!-- Párrafo -->
-
 			<div class="contenedorTimer">
 				<section>
+					<h2 id="timerTitulo">TIMER</h2>
 					<h1 id="hora">00:00:00</h1>
 				</section>
 
 				<section class="contenedorSelector">
+					<h2 id="tituloSeccion">ALARMA</h2>
 					<h2 id="selectorHora">00:00</h2>
-					<h3 id="cuenta">COUNTER</h3>
-
 
 					<label for="horas">Horas:</label>
 					<input class="caja" type="text" id="inputHoras" name="horas"><br><br>
@@ -31,12 +28,20 @@
 					<label for="minutos">Minutos:</label>
 					<input class="caja" type="text" id="inputMinutos" name="minutos"><br><br>
 
-					<button id="set" class="boton" onclick="set()">SET</button>
+					<button id="set" class="boton" onclick="set()">SET ALARMA</button>
+				</section>
 
-					<section>
-						<button id="botonUp" class="boton" onclick="countUp()">UP</button>
-						<button id="botonDown" class="boton" onclick="countDown()">DOWN</button>
-					</section>
+				<section class="contenedorSelector2">
+					<h2 id="tituloSeccion">CUENTA ATRÁS</h2>
+					<h2 id="selectorCuenta">00:00</h2>
+
+					<label for="minutos">Minutos:</label>
+					<input class="caja" type="text" id="inputMinutosCuenta" name="minutos"><br><br>
+
+					<label for="segundos">Segundos:</label>
+					<input class="caja" type="text" id="inputSegundosCuenta" name="segundos"><br><br>
+
+					<button id="set" class="boton" onclick="setCuenta()">SET CUENTA ATRÁS</button>
 				</section>
 
 			</div>
@@ -44,10 +49,6 @@
 			<script src="timer.js"></script>
 		</div>
 
-		<aside> <!-- Contenido adicional -->
-			<h3>Título del contenido adicional</h3> <!-- Título del contenido adicional -->
-			<p>Párrafo del contenido adicional.</p> <!-- Párrafo -->
-		</aside>
 	</main>
 	<footer> <!-- Pie de página -->
 		<p>Derechos reservados &copy; 2023</p> <!-- Texto del pie de página -->
