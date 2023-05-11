@@ -32,6 +32,8 @@ const interval = setInterval(() => {
     
     if (horaCurta==selectorHora.innerHTML) {
         console.log("BEEP BEEP");
+        let audio = document.getElementById("myAudio");
+        audio.play();
     }
 
     /*
