@@ -16,7 +16,7 @@ function set(){
     let inputMinutos = document.getElementById("inputMinutos").value;
 
     if (inputHoras>=0&&inputHoras<24){
-        if(inputMinutos>0&&inputMinutos<60){
+        if(inputMinutos>=0&&inputMinutos<60){
             let result = inputHoras + ":" + inputMinutos;
             console.log(result);
             console.log("set");
@@ -39,7 +39,7 @@ function setCuenta(){
     let inputMinutosCuenta = document.getElementById("inputMinutosCuenta").value;
     let inputSegundosCuenta = document.getElementById("inputSegundosCuenta").value;
 
-    if (inputSegundosCuenta>0&&inputSegundosCuenta<60){
+    if (inputSegundosCuenta>=0&&inputSegundosCuenta<60){
         if(inputMinutosCuenta>=0&&inputMinutosCuenta<60){
             console.log(inputMinutosCuenta);
 
@@ -93,7 +93,7 @@ const interval2 = setInterval(() => {
             }
 
             else if(cuentaMin==0&&cuentaSeg==0){
-                beepCount=10;
+                beepCount=15;
                 cuentaRunning=false;
 
 
