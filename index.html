@@ -20,10 +20,22 @@
 				</section>
 
 				<section class="contenedorSelector">
-					<h2 id="selectorHora">00:00:00</h2>
-					<h3 id="prueba">PRUEBA</h3>
-					<button id="BotonUp" class="boton" onclick="countUp()">UP</button>
-					<button id="BotonDown" class="boton" onclick="countDown()">DOWN</button>
+					<h2 id="selectorHora">00:00</h2>
+					<h3 id="cuenta">COUNTER</h3>
+
+
+					<label for="horas">Horas:</label>
+					<input class="caja" type="text" id="inputHoras" name="horas"><br><br>
+
+					<label for="minutos">Minutos:</label>
+					<input class="caja" type="text" id="inputMinutos" name="minutos"><br><br>
+
+					<button id="set" class="boton" onclick="set()">SET</button>
+
+					<section>
+						<button id="botonUp" class="boton" onclick="countUp()">UP</button>
+						<button id="botonDown" class="boton" onclick="countDown()">DOWN</button>
+					</section>
 				</section>
 
 			</div>
