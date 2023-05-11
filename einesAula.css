@@ -81,6 +81,11 @@
     color: black;
 }
 
+#divBlue{
+    background:lightblue;
+    width: 50%;
+}
+
 /*
 #timer {
   font-size: 3em;

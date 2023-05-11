@@ -2,9 +2,15 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Título de la página</title>
+	<title>EINES DE L'AULA</title>
 	<link rel="stylesheet" href="einesAula.css">
 	<audio id="beep" src="./beep.mp3"></audio>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+	<script src="lucky.js"></script>
 </head>
 <body>
 	<header id="cabeza">
@@ -44,6 +50,18 @@
 					<button id="set" class="boton" onclick="setCuenta()">SET CUENTA ATRÁS</button>
 				</section>
 
+			</div>
+			<div id="divBlue">
+				<h1>Seleccionar un nombre aleatorio</h1>
+				<button onclick="seleccionarNombreAleatorio()">Seleccionar</button>
+				<p>Nombre aleatorio: <span id="nombreAleatorio"></span></p>
+				<canvas id="canvas" width="250" height="100"></canvas>
+				<audio id="audioCoin">
+					<source src="coin.m4a" type="audio/mp4">
+				</audio>
+				<audio id="audioCagaste">
+					<source src="cagaste.m4a" type="audio/mp4">
+				</audio>
 			</div>
 
 			<script src="timer.js"></script>
